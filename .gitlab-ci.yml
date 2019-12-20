@@ -49,6 +49,7 @@ scan-build:
 pages:
   stage: deploy
   script:
+    - ls -la
     - /bin/sh ./util/dist.sh
   dependencies:
     - dist
